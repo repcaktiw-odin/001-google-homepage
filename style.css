@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* Main */
 * {
   box-sizing: border-box;
@@ -21,12 +24,29 @@ body {
   height: 100%;
 }
 
+.login {
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+}
+
+.login--links {
+  display: flex;
+  align-items: center;
+}
+
+.login--links a {
+  padding: 10px;
+}
+
 /* Text */
 
 /* Links */
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
