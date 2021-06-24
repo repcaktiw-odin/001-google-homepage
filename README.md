@@ -3,6 +3,7 @@
 This is firts project of The Odin Project. This introductory project is meant to recreate simple site using HTML/CSS and web browser dev tools.
 
 ## Project overview
+[Project preview](https://repcaktiw-odin.github.io/001-google-homepage/)
 
 ## Used Tech & Tools
 
