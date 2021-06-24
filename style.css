@@ -1,7 +1,7 @@
-/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Main */
+/* ////////////////////////////////////////////// */
+/* Init */
 * {
   box-sizing: border-box;
 }
@@ -18,16 +18,22 @@ body {
   min-width: 400px;
 }
 
+/* ////////////////////////////////////////////// */
 /* Containers */
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* ////////////////////////////////////////////// */
+/* DIV Login */
 .login {
   display: flex;
   justify-content: flex-end;
-  height: 54px;
+  height: 60px;
   letter-spacing: 0.25px;
   padding: 6px;
 }
@@ -42,21 +48,7 @@ body {
   padding: 10px;
 }
 
-/* Text */
-
-/* Links */
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Buttons */
+/* Login Buttons */
 .login--links--button {
   margin: 0px 20px;
   padding: 8px 23px;
@@ -71,4 +63,29 @@ a:hover {
 .login--links--button:hover {
   text-decoration: none;
   background: #2b7de9;
+}
+
+/* ////////////////////////////////////////////// */
+/* Div Doodle */
+.doodle {
+  display: flex;
+  justify-content: center;
+  min-height: 92px;
+  max-height: 200px;
+}
+
+/* ////////////////////////////////////////////// */
+/* Global Text */
+
+/* ////////////////////////////////////////////// */
+/* Global Links */
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
 }
