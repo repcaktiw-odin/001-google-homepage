@@ -16,10 +16,6 @@ This is firts project of The Odin Project. This introductory project is meant to
 
 For now website isn't pixelperfect recreation of google website. There are few known issues (grouped by divs):
 
-Div.login: icon alignment, font differencies
-Div.search: used different icons, element position differencies
-Div.footer: element position differences
-
 ## Learning outcomes
 
 In this project I was practicing:
