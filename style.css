@@ -27,6 +27,18 @@ body {
 }
 
 /* ////////////////////////////////////////////// */
+/* Global Links */
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ////////////////////////////////////////////// */
 /* DIV Login */
 .login {
   display: flex;
@@ -137,30 +149,89 @@ body {
 }
 
 /* ////////////////////////////////////////////// */
-/* Div country */
-.country {
+/* Div footer */
+.footer {
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.54);
+}
+.footer--country {
   padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.54);
-  background: #f2f2f2;
-  flex-grow: 0;
   height: 50px;
+  font-size: 15px;
   display: flex;
   align-items: center;
 }
 
-/* ////////////////////////////////////////////// */
-/* Global Text */
-
-/* ////////////////////////////////////////////// */
-/* Global Links */
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'Roboto', sans-serif;
+.footer--footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  font-size: 14px;
 }
 
-a:hover {
-  text-decoration: underline;
+.footer--footer a {
+  padding: 15px;
+}
+
+.footer--footer--left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer--footer--center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--footer--right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 1100px) {
+  .footer--footer--left {
+    order: 1;
+    min-width: 30%;
+  }
+
+  .footer--footer--center {
+    order: 2;
+  }
+
+  .footer--footer--right {
+    order: 3;
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer--footer--left {
+    order: 1;
+  }
+
+  .footer--footer--center {
+    order: 0;
+    width: 100%;
+  }
+
+  .footer--footer--right {
+    order: 3;
+  }
+}
+
+.footer img {
+  height: 14px;
+  margin-right: 6px;
+}
+
+.footer a {
+  color: #70757a;
 }
