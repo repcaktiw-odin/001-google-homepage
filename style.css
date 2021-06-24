@@ -27,15 +27,18 @@ body {
 .login {
   display: flex;
   justify-content: flex-end;
-  height: 48px;
+  height: 54px;
+  letter-spacing: 0.25px;
+  padding: 6px;
 }
 
 .login--links {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
-.login--links a {
+.login--links--link {
   padding: 10px;
 }
 
@@ -51,4 +54,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Buttons */
+.login--links--button {
+  margin: 0px 20px;
+  padding: 8px 23px;
+  color: #fff;
+  background: #1a73e8;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+    0 1px 3px 1px rgba(66, 133, 244, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.login--links--button:hover {
+  text-decoration: none;
+  background: #2b7de9;
 }
